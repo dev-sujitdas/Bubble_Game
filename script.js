@@ -1,6 +1,6 @@
 // function to start the game..
 function startgame() {        
-  document.querySelector("#bottom").innerHTML = `<h1 id="h1">Let's Start The Game</h1>, <button class="start" type="button">Start</button>`;    
+  document.querySelector("#bottom").innerHTML = `<h1 id="h1">Let's Start The Game</h1> <button class="start" type="button">Start</button>`;    
   let button = document.getElementsByClassName("start")[0];
   button.addEventListener("click", clickStart);
 }
