@@ -26,12 +26,12 @@ document.querySelector("#bottom").innerHTML = clutter;
 // function for Timer..
 let timer = 60;
 function runTimer() {
-let timerinterval = setInterval(function () {
+let timerInterval = setInterval(function () {
   if (timer > 0) {
     timer--;
     document.querySelector("#timerval").textContent = timer;
   } else {
-    clearInterval(timerinterval);
+    clearInterval(timerInterval);
     document.querySelector("#hitval").textContent = "0";
     document.querySelector("#scoreval").textContent = "0";
     document.querySelector("#bottom").innerHTML = `<h2 id="h1">Game Over</h2> <h1>Your score is..</h1> <h1>${score}</h1> <button class="retry" type="button">Retry</button>`;          
